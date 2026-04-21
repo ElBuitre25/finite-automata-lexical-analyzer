@@ -1,6 +1,16 @@
 def main():
-   string=input("ingrese el string: ")
-   print(automata1(string))
+   #Palabras reservadas 
+
+
+    string=input("ingrese el string: ")
+
+    if automata1(string):
+        if automata2(string):
+           print("Es una palabra clave")
+        else:
+            print(f"Es una variable: {string[:-1]}")
+    else: 
+        print("La cadena no es valida")
 
 
 
@@ -42,7 +52,8 @@ def automata1(string):
 
 
 def automata2(string):
-    print("implement here automata2")
+    #print("implement here automata2")
+    return False
     
 
 

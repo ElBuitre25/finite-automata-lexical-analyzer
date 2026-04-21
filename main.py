@@ -5,7 +5,7 @@ def main():
     string=input("ingrese el string: ")
 
     if automata1(string):
-        if automata2(string):
+        if automata2(string[:-1]):
            print("Es una palabra clave")
         else:
             print(f"Es una variable: {string[:-1]}")
@@ -58,10 +58,6 @@ def automata2(string):
 
             case 3 if character == 'n':
                 current_state = 4
-
-            case 4 if character.isalnum():
-                current_state = 4
-
             case _:
                 return False
 
@@ -74,7 +70,7 @@ def automata2(string):
 
 
 
-
+main()
 
 
 

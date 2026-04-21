@@ -42,8 +42,7 @@ def automata1(string):
 
 
 def automata2(string):
-    states = range(5)
-    initial_state = 0
+    print("implement here automata2")
     
 
 

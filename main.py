@@ -39,24 +39,42 @@ def automata1(string):
         return False
     
             
-
-
-
-
-
-
-
-
-
-
-
-
+            
 def automata2(string):
-    #print("implement here automata2")
-    return False
-    
+
+    current_state = 0
+
+    for character in string:
+
+        match current_state:
+            case 0 if character == 't':
+                current_state = 1
+
+            case 1 if character == 'h':
+                current_state = 2
+
+            case 2 if character == 'e':
+                current_state = 3
+
+            case 3 if character == 'n':
+                current_state = 4
+
+            case 4 if character.isalnum():
+                current_state = 4
+
+            case _:
+                return False
+
+    if current_state == 4:
+        return True
+    else:
+        return False
 
 
 
 
-main()
+
+
+
+
+

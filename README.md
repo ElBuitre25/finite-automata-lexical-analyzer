@@ -1,4 +1,4 @@
-## initial commit
+
 # Finite Automata Implementation – Assignment 2
 
 ## 📌 Overview
